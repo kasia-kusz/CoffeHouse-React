@@ -9,7 +9,6 @@ export const Container = styled.div`
 
 export const MainShowcase = styled.div`
   background-color: ${({ theme }) => theme.colors.darkColor};
-  //background-color: #333;
   height: 100vh;
   &:after {
     content: "";

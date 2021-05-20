@@ -31,8 +31,8 @@ export const Content = styled.div`
   }
 `;
 export const Title = styled.h1`
-  font-size: 3.5rem;
-  color: $primary-color;
+  font-size: 3rem;
+  color: ${({ theme }) => theme.colors.primaryColor};
   margin-bottom: 8rem;
   position: relative;
   display: inline-block;
@@ -43,7 +43,7 @@ export const Title = styled.h1`
     left: 0;
     height: 2px;
     width: 50px;
-    background-color: $primary-color;
+    background-color: ${({ theme }) => theme.colors.primaryColor};
   }
   @media screen and (max-width: ${({ theme }) =>
       theme.breakpoints.tablet_big}) {
@@ -56,7 +56,7 @@ export const Title = styled.h1`
 
 export const Text = styled.p`
   color: gray;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   line-height: 1.8;
   max-width: 500px;
   @media screen and (max-width: ${({ theme }) =>
