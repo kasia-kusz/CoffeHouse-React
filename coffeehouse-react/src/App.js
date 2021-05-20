@@ -1,4 +1,3 @@
-import "./App.css";
 import Showcase from "./components/Showcase/Showcase";
 import Footer from "./components/Footer/Footer";
 import Introduction from "./components/Introduction/Introduction";
