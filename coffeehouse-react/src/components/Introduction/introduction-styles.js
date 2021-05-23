@@ -4,6 +4,7 @@ export const Intro = styled.div`
   display: flex;
   width: 100%;
   padding: 3rem 0;
+  align-items: center;
 
   @media screen and (max-width: ${({ theme }) =>
       theme.breakpoints.tablet_big}) {
@@ -17,7 +18,7 @@ export const Content = styled.div`
   width: 50%;
   display: flex;
   flex-direction: column;
-  padding-right: 80px;
+  padding-right: 50px;
 
   @media screen and (max-width: ${({ theme }) =>
       theme.breakpoints.laptop_small}) {
@@ -30,16 +31,18 @@ export const Content = styled.div`
     padding: 0;
   }
 `;
+
 export const Title = styled.h1`
   font-size: 3rem;
+  font-family: 'Brush Script MT', cursive;
   color: ${({ theme }) => theme.colors.primaryColor};
-  margin-bottom: 8rem;
+  margin-bottom: 6rem;
   position: relative;
   display: inline-block;
   &::after {
     content: "";
     position: absolute;
-    bottom: -4rem;
+    bottom: -3rem;
     left: 0;
     height: 2px;
     width: 50px;
@@ -56,13 +59,14 @@ export const Title = styled.h1`
 
 export const Text = styled.p`
   color: gray;
-  font-size: 1.5rem;
-  line-height: 1.8;
+  font-size: 1.3rem;
+  line-height: 1.5;
   max-width: 500px;
   @media screen and (max-width: ${({ theme }) =>
       theme.breakpoints.tablet_big}) {
     text-align: center;
     padding: 0 20px;
+    max-width: 100%;
   }
 `;
 

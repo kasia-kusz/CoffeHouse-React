@@ -15,6 +15,7 @@ import breakfast from "../../assets/breakfast.jpg";
 import iceCoffee from "../../assets/icecoffee.jpg";
 import { Wrapper } from "../Wrappers/sectionwrapper-styles";
 
+
 const Introduction = () => (
   <Wrapper>
     <Intro>
