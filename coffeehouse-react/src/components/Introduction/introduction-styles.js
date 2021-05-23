@@ -1,4 +1,5 @@
 import styled, { css } from "styled-components";
+import { Paragraph } from "../Typography/Typography";
 
 export const Intro = styled.div`
   display: flex;
@@ -54,10 +55,8 @@ export const Title = styled.h1`
   }
 `;
 
-export const Text = styled.p`
+export const Text = styled(Paragraph)`
   color: gray;
-  font-size: 1.5rem;
-  line-height: 1.8;
   max-width: 500px;
   @media screen and (max-width: ${({ theme }) =>
       theme.breakpoints.tablet_big}) {
@@ -87,6 +86,9 @@ export const SmallGallery = styled.div`
 export const ImageWrapper = styled.div`
   margin-top: 12px;
   width: calc(33.33333% - 8px);
+
+  text-align: ${({ center }) => (center ? "center" : "")};
+
   &:not(:nth-child(3n)) {
     margin-right: 12px;
   }

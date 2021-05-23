@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import coffeeBack from "../../assets/showcase.jpg";
 
 export const Container = styled.div`
@@ -7,9 +7,14 @@ export const Container = styled.div`
   }
 `;
 
+// ${zmienna} - aby sie dostac do zmiennych w cssie
+// ${(props) => props.pole} - aby sie dostac do propsow
+// ${({pole z propsa}) => aby od razu dostac sie do pola z propsow}
+
 export const MainShowcase = styled.div`
   background-color: ${({ theme }) => theme.colors.darkColor};
   height: 100vh;
+  position: relative;
   &:after {
     content: "";
     background: url(${coffeeBack}) no-repeat center center/cover;

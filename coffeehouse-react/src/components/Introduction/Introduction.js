@@ -9,14 +9,11 @@ import {
   ImageWrapper,
   Img,
 } from "./introduction-styles.js";
-import latte from "../../assets/latte.jpg";
-import dessert from "../../assets/dessert.jpg";
-import breakfast from "../../assets/breakfast.jpg";
-import iceCoffee from "../../assets/icecoffee.jpg";
-import { Wrapper } from "../Wrappers/sectionwrapper-styles";
-
+import { SectionWrapper } from "../../shared/wrappers/wrappers.js";
+import data from "../../data/introductionData";
+import uuid from "react-uuid";
 const Introduction = () => (
-  <Wrapper>
+  <SectionWrapper>
     <Intro>
       <Content>
         <Title>OUR SWEETS</Title>
@@ -27,26 +24,13 @@ const Introduction = () => (
         </Text>
       </Content>
       <SmallGallery>
-        <ImageWrapper>
-          <Img src={iceCoffee} alt="breakfast" />
-        </ImageWrapper>
-        <ImageWrapper>
-          <Img src={breakfast} alt="latte" />
-        </ImageWrapper>
-        <ImageWrapper>
-          <Img src={dessert} alt="dessert" />
-        </ImageWrapper>
-        <ImageWrapper>
-          <Img src={latte} alt="idecoffee" />
-        </ImageWrapper>
-        <ImageWrapper>
-          <Img src={dessert} alt="latte" />
-        </ImageWrapper>
-        <ImageWrapper>
-          <Img src={latte} alt="icecoffee" />
-        </ImageWrapper>
+        {data.map((image) => (
+          <ImageWrapper key={uuid()}>
+            <Img src={image.src} alt={image.alt} />
+          </ImageWrapper>
+        ))}
       </SmallGallery>
     </Intro>
-  </Wrapper>
+  </SectionWrapper>
 );
 export default Introduction;

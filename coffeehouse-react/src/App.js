@@ -3,6 +3,7 @@ import Footer from "./components/Footer/Footer";
 import Introduction from "./components/Introduction/Introduction";
 import Home from "./pages/Home/Home";
 import { Route } from "react-router-dom";
+import { SectionWrapper } from "./shared/wrappers/wrappers";
 
 function App() {
   return (
