@@ -1,15 +1,16 @@
-import "./App.css";
 import Showcase from "./components/Showcase/Showcase";
 import Footer from "./components/Footer/Footer";
+import Introduction from "./components/Introduction/Introduction";
 import Home from "./pages/Home/Home";
 import { Route } from "react-router-dom";
+import { SectionWrapper } from "./shared/wrappers/wrappers";
 
 function App() {
   return (
     <div className="App">
       <Showcase />
+      <Introduction />
       <Route exact path="/" component={Home}></Route>
-      {/* <Route path="/about" component={About}></Route> */}
       <Footer />
     </div>
   );
