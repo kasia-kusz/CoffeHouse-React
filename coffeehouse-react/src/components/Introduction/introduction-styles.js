@@ -34,7 +34,6 @@ export const Content = styled.div`
 `;
 
 export const Title = styled(TitleXL)`
-  //font-size: 3rem;
   // font-family: "Brush Script MT", cursive;
   color: ${({ theme }) => theme.colors.primaryColor};
   margin-bottom: 6rem;
