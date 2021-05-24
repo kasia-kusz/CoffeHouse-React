@@ -12,6 +12,7 @@ import {
 import { SectionWrapper } from "../../shared/wrappers/wrappers.js";
 import data from "../../data/introductionData";
 import uuid from "react-uuid";
+
 const Introduction = () => (
   <SectionWrapper>
     <Intro>
