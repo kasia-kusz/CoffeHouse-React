@@ -1,26 +1,30 @@
 import styled from "styled-components";
 
+const family = "Brush Script MT, cursive";
+
 export const TitleXL = styled.h1`
-  font-size: 24px;
+  font-size: 40px;
+  font-family: ${family};
 
   @media screen and (max-width: ${({ theme }) => theme.breakpoints.laptop}) {
-    font-size: 20px;
+    font-size: 38px;
   }
 
   @media screen and (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
-    font-size: 18px;
+    font-size: 36px;
   }
 `;
 
 export const TitleL = styled.h2`
-  font-size: 20px;
+  font-size: 34px;
+  font-family: ${family};
 
   @media screen and (max-width: ${({ theme }) => theme.breakpoints.laptop}) {
-    font-size: 18px;
+    font-size: 32px;
   }
 
   @media screen and (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
-    font-size: 16px;
+    font-size: 30px;
   }
 `;
 
