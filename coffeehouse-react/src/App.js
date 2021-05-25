@@ -4,6 +4,7 @@ import Introduction from "./components/Introduction/Introduction";
 import Home from "./pages/Home/Home";
 import { Route } from "react-router-dom";
 import CommentsBox from "./components/CommentsBox/CommentsBox";
+import CoffeeOffer from "./components/CoffeeOffer/CoffeeOffer";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Showcase />
       <Introduction />
       <CommentsBox />
+      <CoffeeOffer />
       <Route exact path="/" component={Home}></Route>
       <Footer />
     </div>

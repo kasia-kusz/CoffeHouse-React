@@ -6,7 +6,7 @@ const theme = {
     primaryColor: "#d4af37",
     secondaryColor: "#6e5710",
     brokenWhite: "#eee",
-    lightWhite: "rgb(250, 250, 250)",
+    lightGrey: "#949494",
     text: "#e1ecf5",
   },
   breakpoints: {
