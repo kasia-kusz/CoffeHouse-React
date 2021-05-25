@@ -18,20 +18,15 @@ const CoffeeOffer = () => (
     <SectionWrapper>
       <HouseOffer>
         <Offer>
-          <OfferItem>
+          {/* <OfferItem>
             <TextBox>
-              <Title>Breakfast</Title>
-              <Description>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Obcaecati, voluptatibus autem fugit sit aliquam cumque!
-              </Description>
+              <Title>{dataImg.first.title}</Title>
+              <Description>{dataImg.first.text}</Description>
             </TextBox>
             <ImageBox>
-              {/* {dataImg.map((img, index) => (
-                <Image src={img.src} alt={img.alt} />
-              ))} */}
+              <Image src={dataImg.first.src} alt={dataImg.first.alt} />
             </ImageBox>
-          </OfferItem>
+          </OfferItem> */}
           <OfferItem reverse>
             <TextBox>
               <Title>Lunch</Title>
@@ -52,6 +47,20 @@ const CoffeeOffer = () => (
             </TextBox>
             <ImageBox></ImageBox>
           </OfferItem>
+
+          {dataImg.map((img, index) => (
+            <>
+              <OfferItem className={index % 2 !== 0 ? "reverse" : ""}>
+                <TextBox>
+                  <Title>{img.title}</Title>
+                  <Description>{img.text}</Description>
+                </TextBox>
+                <ImageBox>
+                  <Image src={img.src} alt={img.alt} />
+                </ImageBox>
+              </OfferItem>
+            </>
+          ))}
         </Offer>
       </HouseOffer>
     </SectionWrapper>

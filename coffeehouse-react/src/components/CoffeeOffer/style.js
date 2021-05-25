@@ -20,11 +20,19 @@ export const OfferItem = styled.div`
   display: flex;
   background-color: ${({ theme }) => theme.colors.brokenWhite};
   height: 300px;
-  ${(props) =>
+  /* ${(props) =>
     props.reverse &&
     css`
       flex-direction: row-reverse;
-    `}
+    `} */
+  &.reverse {
+    flex-direction: row-reverse;
+    @media screen and (max-width: ${({ theme }) =>
+        theme.breakpoints.tablet_small}) {
+      flex-direction: column;
+      height: 500px;
+    }
+  }
   @media screen and (max-width: ${({ theme }) =>
       theme.breakpoints.tablet_small}) {
     flex-direction: column;
@@ -66,19 +74,23 @@ export const Title = styled(TitleXL)`
 `;
 
 export const Description = styled(Paragraph)`
-text-align: center;
+  text-align: center;
   color: ${({ theme }) => theme.colors.secondaryColor};
   //font-size: 1.7rem;
 `;
 
 export const ImageBox = styled.div`
   width: 50%;
-  height: 100%;
-  background: url(${dataImg[0].src}) no-repeat center center/cover;
+  //height: 100%;
+  /* background: url(dolar{dataImg[0].src}) no-repeat center center/cover; */
   @media screen and (max-width: ${({ theme }) =>
       theme.breakpoints.tablet_small}) {
     width: 100%;
   }
 `;
 
-export const Image = styled.img``;
+export const Image = styled.img`
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+`;

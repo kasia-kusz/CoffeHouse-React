@@ -17,6 +17,28 @@ const offerData = [
   },
 ];
 
-const offerContent = [{ src: latte, alt: "latte" ,title: "Breakfast", text: "asdasdasdasdas"}];
+// const offerContent = {
+//   first: {
+//     src: breakfast,
+//     alt: "breakfast",
+//     title: "Breakfast",
+//     text: "asdasdasdasdas",
+//   },
+// };
 
-export default offerData;
+const offerContent = [
+  {
+    src: breakfast,
+    alt: "breakfast",
+    title: "Breakfast",
+    text: "asdasdasdasdas",
+  },
+  {
+    src: latte,
+    alt: "breakfast",
+    title: "Luncha",
+    text: "dddddddddddddd",
+  },
+];
+//export default offerData;
+export default offerContent;
