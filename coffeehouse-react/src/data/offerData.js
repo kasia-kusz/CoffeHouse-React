@@ -17,4 +17,6 @@ const offerData = [
   },
 ];
 
+const offerContent = [{ src: latte, alt: "latte" ,title: "Breakfast", text: "asdasdasdasdas"}];
+
 export default offerData;

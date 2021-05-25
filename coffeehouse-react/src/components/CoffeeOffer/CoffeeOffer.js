@@ -1,7 +1,17 @@
 import React from "react";
 import { SectionWrapper } from "../../shared/wrappers/wrappers";
 import dataImg from "../../data/offerData";
-import { Description, HouseOffer, ImageBox, LightColorBox, Offer, OfferItem, TextBox, Title } from "./style";
+import {
+  Description,
+  HouseOffer,
+  ImageBox,
+  LightColorBox,
+  Offer,
+  OfferItem,
+  TextBox,
+  Title,
+  Image,
+} from "./style";
 
 const CoffeeOffer = () => (
   <LightColorBox>
@@ -17,7 +27,9 @@ const CoffeeOffer = () => (
               </Description>
             </TextBox>
             <ImageBox>
-              {/* <img src="./assets/icecoffee.jpg" alt="menu" class="menu-img"/>  */}
+              {/* {dataImg.map((img, index) => (
+                <Image src={img.src} alt={img.alt} />
+              ))} */}
             </ImageBox>
           </OfferItem>
           <OfferItem reverse>
