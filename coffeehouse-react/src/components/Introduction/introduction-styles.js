@@ -1,5 +1,5 @@
-import styled, { css } from "styled-components";
-import { Paragraph } from "../Typography/Typography";
+import styled from "styled-components";
+import { Paragraph, TitleXL } from "../Typography/Typography";
 
 export const Intro = styled.div`
   display: flex;
@@ -33,9 +33,8 @@ export const Content = styled.div`
   }
 `;
 
-export const Title = styled.h1`
-  font-size: 3rem;
-  font-family: "Brush Script MT", cursive;
+export const Title = styled(TitleXL)`
+  // font-family: "Brush Script MT", cursive;
   color: ${({ theme }) => theme.colors.primaryColor};
   margin-bottom: 6rem;
   position: relative;
