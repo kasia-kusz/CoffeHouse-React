@@ -2,21 +2,6 @@ import latte from "../assets/latte.jpg";
 import dessert from "../assets/dessert.jpg";
 import breakfast from "../assets/breakfast.jpg";
 
-const offerData = [
-  {
-    src: latte,
-    alt: "latte",
-  },
-  {
-    src: dessert,
-    alt: "dessert",
-  },
-  {
-    src: breakfast,
-    alt: "breakfast",
-  },
-];
-
 // const offerContent = {
 //   first: {
 //     src: breakfast,
@@ -31,14 +16,20 @@ const offerContent = [
     src: breakfast,
     alt: "breakfast",
     title: "Breakfast",
-    text: "asdasdasdasdas",
+    text: " Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, voluptatibus autem fugit sit aliquam cumque!",
   },
   {
     src: latte,
-    alt: "breakfast",
-    title: "Luncha",
-    text: "dddddddddddddd",
+    alt: "Lunch",
+    title: "Lunch",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos aut veritatis inventore nisi quod quaerat consectetur sint!",
+  },
+  {
+    src: dessert,
+    alt: "Dinner",
+    title: "Dinner",
+    text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore totam deleniti eaque!",
   },
 ];
-//export default offerData;
+
 export default offerContent;
