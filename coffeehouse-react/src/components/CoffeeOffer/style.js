@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components";
 import { Paragraph, TitleXL } from "../Typography/Typography";
-import dataImg from "../../data/offerData";
+//import dataImg from "../../data/offerData";
 
 export const LightColorBox = styled.div`
   background-color: ${({ theme }) => theme.colors.lightGrey};
@@ -56,7 +56,6 @@ export const TextBox = styled.div`
 
 export const Title = styled(TitleXL)`
   color: ${({ theme }) => theme.colors.primaryColor};
-  //font-size: 2.5rem;
   margin-bottom: 4rem;
   position: relative;
   display: inline-block;
@@ -76,7 +75,6 @@ export const Title = styled(TitleXL)`
 export const Description = styled(Paragraph)`
   text-align: center;
   color: ${({ theme }) => theme.colors.secondaryColor};
-  //font-size: 1.7rem;
 `;
 
 export const ImageBox = styled.div`

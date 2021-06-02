@@ -5,6 +5,7 @@ import Home from "./pages/Home/Home";
 import { Route } from "react-router-dom";
 import CommentsBox from "./components/CommentsBox/CommentsBox";
 import CoffeeOffer from "./components/CoffeeOffer/CoffeeOffer";
+import Gallery from "./components/Gallery/Gallery";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Introduction />
       <CommentsBox />
       <CoffeeOffer />
+      <Gallery />
       <Route exact path="/" component={Home}></Route>
       <Footer />
     </div>
