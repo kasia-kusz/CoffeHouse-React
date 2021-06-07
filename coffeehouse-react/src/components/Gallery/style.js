@@ -16,3 +16,9 @@ export const TextBox = styled.div`
   text-align: center;
   padding: 0 60px 30px 60px;
 `;
+
+export const SlideImg = styled.div`
+  height: 100px;
+  margin: 10px 20px;
+  background-color: red;
+`;
