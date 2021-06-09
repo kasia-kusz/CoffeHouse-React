@@ -1,22 +1,15 @@
 import React from "react";
+
+import SwiperCore, { Navigation, A11y } from "swiper";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/swiper.scss";
+import "swiper/components/navigation/navigation.scss";
+
 import { SectionWrapper } from "../../shared/wrappers/wrappers";
-import "./style";
+import { TextBox, Title, Description, Image } from "./style";
 import dataImg from "../../data/introductionData";
 
-// import Swiper core and required modules
-import SwiperCore, { Navigation, Pagination, Scrollbar, A11y } from "swiper";
-
-import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
-import "../../../node_modules/swiper/swiper.scss";
-import "swiper/components/navigation/navigation.scss";
-import "swiper/components/pagination/pagination.scss";
-import "swiper/components/scrollbar/scrollbar.scss";
-import { TextBox, Title, Description, Image } from "./style";
-
-// install Swiper modules
-SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
+SwiperCore.use([Navigation, A11y]);
 
 const Gallery = () => (
   <SectionWrapper>
@@ -29,11 +22,9 @@ const Gallery = () => (
       </Description>
     </TextBox>
     <Swiper
-      spaceBetween={50}
+      spaceBetween={30}
       slidesPerView={3}
       navigation
-      //pagination={{ clickable: true }}
-      //scrollbar={{ draggable: true }}
       onSwiper={(swiper) => console.log(swiper)}
       onSlideChange={() => console.log("slide change")}
     >

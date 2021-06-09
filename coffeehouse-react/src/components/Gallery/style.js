@@ -20,5 +20,5 @@ export const TextBox = styled.div`
 export const Image = styled.img`
   height: 100%;
   width: 100%;
-  margin: 10px 20px;
+  //margin: 10px 20px;
 `;
