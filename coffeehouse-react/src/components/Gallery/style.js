@@ -20,11 +20,16 @@ export const TextBox = styled.div`
 export const Image = styled.img`
   height: 100%;
   width: 100%;
+  @media screen and (max-width: ${({ theme }) =>
+      theme.breakpoints.tablet_small}) {
+    width: 90%;
+  }
 `;
 export const Nav = styled.div`
   display: flex;
   width: 100%;
   align-items: center;
+  text-align: center;
 `;
 
 export const Next = styled.div`
@@ -34,6 +39,10 @@ export const Next = styled.div`
   cursor: pointer;
   margin-right: 5px;
   padding: 0 4px;
+  @media screen and (max-width: ${({ theme }) =>
+      theme.breakpoints.tablet_small}) {
+    margin: 0 0 0 15px;
+  }
 `;
 
 export const Prev = styled.div`
@@ -43,4 +52,8 @@ export const Prev = styled.div`
   border-radius: 50%;
   cursor: pointer;
   margin-left: 5px;
+  @media screen and (max-width: ${({ theme }) =>
+      theme.breakpoints.tablet_small}) {
+    margin: 0 10px 0 0;
+  }
 `;
