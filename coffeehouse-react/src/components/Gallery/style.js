@@ -29,18 +29,18 @@ export const Nav = styled.div`
 
 export const Next = styled.div`
   font-size: 24px;
-  border-radius: 20%;
+  border-radius: 50%;
   background-color: ${({ theme }) => theme.colors.primaryColor};
   cursor: pointer;
   margin-right: 5px;
+  padding: 0 4px;
 `;
 
 export const Prev = styled.div`
-  width: 30px;
-  //height: 30px;
+  padding: 0 4px;
   font-size: 24px;
   background-color: ${({ theme }) => theme.colors.primaryColor};
-  border-radius: 20%;
+  border-radius: 50%;
   cursor: pointer;
   margin-left: 5px;
 `;
