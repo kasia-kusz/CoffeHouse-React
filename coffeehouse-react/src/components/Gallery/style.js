@@ -20,5 +20,27 @@ export const TextBox = styled.div`
 export const Image = styled.img`
   height: 100%;
   width: 100%;
-  //margin: 10px 20px;
+`;
+export const Nav = styled.div`
+  display: flex;
+  width: 100%;
+  align-items: center;
+`;
+
+export const Next = styled.div`
+  font-size: 24px;
+  border-radius: 20%;
+  background-color: ${({ theme }) => theme.colors.primaryColor};
+  cursor: pointer;
+  margin-right: 5px;
+`;
+
+export const Prev = styled.div`
+  width: 30px;
+  //height: 30px;
+  font-size: 24px;
+  background-color: ${({ theme }) => theme.colors.primaryColor};
+  border-radius: 20%;
+  cursor: pointer;
+  margin-left: 5px;
 `;

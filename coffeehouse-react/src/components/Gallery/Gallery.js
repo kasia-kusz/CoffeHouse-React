@@ -6,10 +6,44 @@ import "swiper/swiper.scss";
 import "swiper/components/navigation/navigation.scss";
 
 import { SectionWrapper } from "../../shared/wrappers/wrappers";
-import { TextBox, Title, Description, Image } from "./style";
+import { TextBox, Title, Description, Image, Next, Prev, Nav } from "./style";
 import dataImg from "../../data/introductionData";
 
 SwiperCore.use([Navigation, A11y]);
+
+const options = {
+  loop: true,
+  speed: 1000,
+  autoplay: {
+    delay: 3000,
+  },
+
+  slidesPerView: 3,
+  spaceBetween: 24,
+
+  navigation: {
+    nextEl: ".slider-next",
+    prevEl: ".slider-prev",
+  },
+
+  breakpoints: {
+    319: {
+      slidesPerView: 1,
+    },
+    601: {
+      slidesPerView: 2,
+    },
+    867: {
+      slidesPerView: 3,
+    },
+    1023: {
+      slidesPerView: 3,
+    },
+    1100: {
+      slidesPerView: 3,
+    },
+  },
+};
 
 const Gallery = () => (
   <SectionWrapper>
@@ -21,19 +55,21 @@ const Gallery = () => (
         quis fugiat.
       </Description>
     </TextBox>
-    <Swiper
-      spaceBetween={30}
-      slidesPerView={3}
-      navigation
-      onSwiper={(swiper) => console.log(swiper)}
-      onSlideChange={() => console.log("slide change")}
-    >
-      {dataImg.map((img) => (
-        <SwiperSlide>
-          <Image src={img.src} alt={img.alt} />
-        </SwiperSlide>
-      ))}
-    </Swiper>
+    <Nav>
+      <Next className="slider-next">
+        {"<"}
+      </Next>
+      <Swiper {...options}>
+        {dataImg.map((img) => (
+          <SwiperSlide>
+            <Image src={img.src} alt={img.alt} />
+          </SwiperSlide>
+        ))}
+      </Swiper>
+      <Prev className="slider-prev">
+      {">"}
+      </Prev>
+    </Nav>
   </SectionWrapper>
 );
 export default Gallery;
