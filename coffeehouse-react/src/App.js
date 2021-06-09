@@ -15,7 +15,7 @@ function App() {
       <CommentsBox />
       <CoffeeOffer />
       <Gallery />
-      <Route exact path="/" component={Home}></Route>
+      {/* <Route exact path="/" component={Home}></Route> */}
       <Footer />
     </div>
   );

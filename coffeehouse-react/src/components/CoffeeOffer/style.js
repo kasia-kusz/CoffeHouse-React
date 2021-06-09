@@ -51,6 +51,7 @@ export const TextBox = styled.div`
   @media screen and (max-width: ${({ theme }) =>
       theme.breakpoints.tablet_small}) {
     width: 100%;
+    height: 60%;
   }
 `;
 
@@ -84,6 +85,7 @@ export const ImageBox = styled.div`
   @media screen and (max-width: ${({ theme }) =>
       theme.breakpoints.tablet_small}) {
     width: 100%;
+    overflow: hidden;
   }
 `;
 
