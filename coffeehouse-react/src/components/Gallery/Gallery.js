@@ -56,9 +56,7 @@ const Gallery = () => (
       </Description>
     </TextBox>
     <Nav>
-      <Next className="slider-next">
-        {"<"}
-      </Next>
+      <Prev className="slider-prev">{"<"}</Prev>
       <Swiper {...options}>
         {dataImg.map((img) => (
           <SwiperSlide>
@@ -66,9 +64,7 @@ const Gallery = () => (
           </SwiperSlide>
         ))}
       </Swiper>
-      <Prev className="slider-prev">
-      {">"}
-      </Prev>
+      <Next className="slider-next">{">"}</Next>
     </Nav>
   </SectionWrapper>
 );

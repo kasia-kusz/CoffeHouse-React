@@ -37,11 +37,11 @@ export const Next = styled.div`
   border-radius: 50%;
   background-color: ${({ theme }) => theme.colors.primaryColor};
   cursor: pointer;
-  margin-right: 5px;
+  margin-left: 5px;
   padding: 0 4px;
   @media screen and (max-width: ${({ theme }) =>
       theme.breakpoints.tablet_small}) {
-    margin: 0 0 0 15px;
+    margin: 0 15px 0 0;
   }
 `;
 
@@ -51,9 +51,9 @@ export const Prev = styled.div`
   background-color: ${({ theme }) => theme.colors.primaryColor};
   border-radius: 50%;
   cursor: pointer;
-  margin-left: 5px;
+  margin-right: 5px;
   @media screen and (max-width: ${({ theme }) =>
       theme.breakpoints.tablet_small}) {
-    margin: 0 10px 0 0;
+    margin: 0 0 0 15px;
   }
 `;
